@@ -1,6 +1,7 @@
 import random
 from brain_games.engine import check_answer
 
+
 def even_game(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
@@ -11,7 +12,7 @@ def even_game(name):
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        if check_answer(correct_answer, input('Your answer: '), name):
+        if check_answer(correct_answer, name):
             count += 1
         else:
             break

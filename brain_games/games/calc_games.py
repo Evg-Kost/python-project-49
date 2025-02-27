@@ -1,4 +1,5 @@
 import random
+
 from brain_games.engine import check_answer
 
 
@@ -16,7 +17,7 @@ def calc_games(name):
             correct_answer = num1 - num2
         else:
             correct_answer = num1 * num2
-        if check_answer(str(correct_answer), input('Your answer: '), name):
+        if check_answer(str(correct_answer), name):
             count += 1
         else:
             break
