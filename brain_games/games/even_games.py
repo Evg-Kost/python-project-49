@@ -1,5 +1,5 @@
 import random
-
+from brain_games.engine import check_answer
 
 def even_game(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -11,13 +11,9 @@ def even_game(name):
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        read = input('Your answer:')
-        if read == correct_answer:
-            print('Correct!')
+        if check_answer(correct_answer, input('Your answer: '), name):
             count += 1
         else:
-            print(f"'{read}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
             break
     if count == 3:
-        print(f"Congratulations, {name}!")
+        print(f'Congratulations, {name}!')
