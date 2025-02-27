@@ -1,5 +1,5 @@
 def check_answer(correct_answer, name):
-    answer = input('Your answer:')
+    answer = str(input('Your answer: '))
     if correct_answer == answer:
         print('Correct!')
         return True
