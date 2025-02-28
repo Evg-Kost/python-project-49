@@ -3,7 +3,7 @@ authors = [
     {name = "Evgeny Kostolomov", email = "e.kostolomov@bk.ru"}
 ]
 version = "0.1.0"
-name = "Brain-Games"
+name = "hexlet-code"
 description ="First pet project - brain games"
 readme = "README.md"
 requires-python = ">=3.12"

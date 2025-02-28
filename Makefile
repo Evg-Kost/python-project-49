@@ -5,9 +5,9 @@ brain-games:
 build:
 	uv build
 package-install:
-	uv tool install dist/brain*.whl
+	uv tool install dist/hexlet*.whl
 package-reinstall:
-	uv tool install --force dist/brain*.whl
+	uv tool install --force dist/hexlet*.whl
 lint:
 	uv run ruff check
 check: lint
