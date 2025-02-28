@@ -10,7 +10,7 @@ def calc_games(name):
         num1 = random.randint(1, 100)
         num2 = random.randint(1, 100)
         expression = random.choice(['+', '-', '*'])
-        print(f'{num1} {expression} {num2}')
+        print(f'Question: {num1} {expression} {num2}')
         if expression == '+':
             correct_answer = num1 + num2
         elif expression == '-':
