@@ -5,9 +5,9 @@ brain-games:
 build:
 	uv build
 package-install:
-	uv tool install dist/*.whl
+	uv tool install dist/brain*.whl
 package-reinstall:
-	uv tool install --force dist/hexlet_code-0.1.0-py3-none-any.whl
+	uv tool install --force dist/brain*.whl
 lint:
 	uv run ruff check
 check: lint
