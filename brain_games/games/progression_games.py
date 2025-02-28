@@ -1,4 +1,5 @@
 import random
+
 from brain_games.engine import check_answer
 
 
@@ -13,7 +14,8 @@ def progression_games(name):
         step_progression = random.randint(1, 5)
         for i in range(1, long_progression + 1):
             if i != point_progression:
-                progression.append(str(start_progression + (step_progression * i)))
+                progression.append(str(start_progression +
+                                       (step_progression * i)))
             else:
                 progression.append('..')
                 correct_answer = start_progression + (step_progression * i)
